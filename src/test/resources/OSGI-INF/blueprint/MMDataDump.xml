@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+	<bean 
+	id="org.mondometeo.data.dump.MMDataDump" 
+	class="org.mondometeo.data.dump.MMDataDump" >
+	  <argument name="/tmp"/>
+	</bean>
+       
+    <ref-list interface="net.staniscia.odynodatabus.DataBusService">
+       <reference-listener ref="org.mondometeo.data.provider.HttpMeteoDataServer"
+         bind-method="setDataBusService" unbind-method="unsetDataBusService"/>
+    </ref-list>
+</blueprint>
