@@ -48,6 +48,10 @@
             <name>OpenGeo Maven Repository</name>
             <url>http://repo.opengeo.org</url>
         </repository>
+        <repository>
+            <id>Alessandro-Staniscia-repo</id>
+            <url>http://www.staniscia.net/repository/release</url>
+        </repository>
     </repositories>
     <!-- 
     Code and Issue  Repository
