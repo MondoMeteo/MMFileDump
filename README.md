@@ -1,6 +1,10 @@
 MMFileDump
 ==========
-
+Dump in differt format the Metereological informations. The format:
+* Java Serialize
+* Feature file (shape format .shp)
+* LST Feature file (shape format .shp)
+* LST Raster file  (geotiff)
 
 builds
 ------
